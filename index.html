@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090d14">
+    <title>اسلایدشو تصاویر</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="page">
+        <section class="slider" id="slider" aria-label="گالری تصاویر">
+            <div class="progress">
+                <div class="progress__bar" id="progressBar"></div>
+            </div>
+
+            <div class="slides" id="slides">
+                <div class="status">
+                    <span class="loader"></span>
+                    <p>در حال دریافت تصاویر...</p>
+                </div>
+            </div>
+
+            <button
+                class="control control--previous"
+                id="previousButton"
+                type="button"
+                aria-label="تصویر قبلی"
+            >
+                &#10095;
+            </button>
+
+            <button
+                class="control control--next"
+                id="nextButton"
+                type="button"
+                aria-label="تصویر بعدی"
+            >
+                &#10094;
+            </button>
+
+            <button
+                class="pause-button"
+                id="pauseButton"
+                type="button"
+                aria-label="توقف اسلایدشو"
+                title="توقف یا ادامه"
+            >
+                <span id="pauseIcon">Ⅱ</span>
+            </button>
+
+            <div class="dots" id="dots" aria-label="انتخاب تصویر"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
